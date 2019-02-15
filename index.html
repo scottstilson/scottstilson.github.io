@@ -25,6 +25,11 @@
         section {
             padding: 6vw 6vw 9.75vw;
         }
+        header > *, section > * {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 370px;
+        }
         h1 > span {
             display: block
         }
@@ -67,14 +72,29 @@
         .bg-green {
             background: #e0f5e7;
             color: #0d040a;
-        }                        
+        }
+        @media only screen and (min-width: 500px) {
+            header {
+                padding: 7vw;
+            }
+            section {
+               padding: 8vw 6vw 11.75vw;
+            }
+            header > *, section > * {
+                max-width: 400px;
+            }
+            .the-heading {
+                white-space: pre-line;
+            }           
+        }
     </style>
 </head>
 <body>
 	<header>
         <h1>
-            <span class="the-heading">Some Micro Churches in State College, PA</span>
-            <span class="post-heading">that are diverse but have the following things <span class="nobr">in common:</span></span>
+            <span class="the-heading">Some Micro Churches
+            in State College, PA</span>
+            <span class="post-heading">that are diverse but have the <span class="nobr">following things in common:</span></span>
         </h1>
     </header>
     <section class="bg-blue">
